@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 #gem "jekyll", "~> 4.2.0"
+gem 'dotenv', '~> 2.1', '>= 2.1.1'
 gem "jekyll-theme-cayman", "~> 0.1.1"
 gem "github-pages", "~> 209", group: :jekyll_plugins
 # If you have any plugins, put them here!
