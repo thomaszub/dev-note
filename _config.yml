@@ -21,7 +21,7 @@
 title: Dev Note
 description: >-
   Notes about various topics in software development.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/dev-note" # the subpath of your site, e.g. /blog
 url: "https://thomaszub.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thomaszub
 
