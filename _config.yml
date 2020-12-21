@@ -24,9 +24,10 @@ description: >-
 baseurl: "/dev-note" # the subpath of your site, e.g. /blog
 url: "https://thomaszub.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thomaszub
+show_downloads: "false"
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
