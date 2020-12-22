@@ -28,6 +28,7 @@ show_downloads: false
 
 # Build settings
 theme: jekyll-theme-cayman
+markdown: kramdown
 plugins:
   - jekyll-feed
 

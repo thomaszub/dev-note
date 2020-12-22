@@ -31,7 +31,20 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
     </header>
-
+    <h2>{{ site.data.content.content_list_title }}</h2>
+    <ul>
+      {% for item in site.data.content.list %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% if item.sublist[0] %}
+          <ul>
+            {% for entry in item.sublist %}
+                <li><a href="{{ entry.url }}">{{ entry.title }}</a>
+                </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+      {% endfor %}
+    </ul>
     <main id="content" class="main-content" role="main">
       {{ content }}
 

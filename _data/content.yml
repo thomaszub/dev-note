@@ -1,0 +1,6 @@
+content_list_title: Content
+list:
+  - title: Index
+    url: index.html
+  - title: About
+    url: about.html
