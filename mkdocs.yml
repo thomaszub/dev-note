@@ -1,1 +1,11 @@
 site_name: Dev Note
+repo_url: https://github.com/thomaszub/dev-note/
+nav:
+  - Introduction: index.md
+  - ...
+plugins:
+  - awesome-pages
+  - search
+  - section-index
+theme:
+  name: material

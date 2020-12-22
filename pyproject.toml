@@ -8,6 +8,9 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 mkdocs = "^1.1.2"
+mkdocs-section-index = "^0.2.2"
+mkdocs-awesome-pages-plugin = "^2.5.0"
+mkdocs-material = "^6.2.2"
 
 [tool.poetry.dev-dependencies]
 

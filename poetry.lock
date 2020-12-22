@@ -1,4 +1,23 @@
 [[package]]
+name = "backrefs"
+version = "4.5"
+description = "A wrapper around re and regex that adds additional back references."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+extras = ["regex"]
+
+[[package]]
+name = "bracex"
+version = "2.0.1"
+description = "Bash style brace expander."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
 name = "click"
 version = "7.1.2"
 description = "Composable command line interface toolkit"
@@ -101,6 +120,55 @@ PyYAML = ">=3.10"
 tornado = ">=5.0"
 
 [[package]]
+name = "mkdocs-awesome-pages-plugin"
+version = "2.5.0"
+description = "An MkDocs plugin that simplifies configuring page titles and their order"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+mkdocs = ">=1"
+wcmatch = ">=7"
+
+[[package]]
+name = "mkdocs-material"
+version = "6.2.2"
+description = "A Material Design theme for MkDocs"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+markdown = ">=3.2"
+mkdocs = ">=1.1"
+mkdocs-material-extensions = ">=1.0"
+Pygments = ">=2.4"
+pymdown-extensions = ">=7.0"
+
+[[package]]
+name = "mkdocs-material-extensions"
+version = "1.0.1"
+description = "Extension pack for Python Markdown."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+mkdocs-material = ">=5.0.0"
+
+[[package]]
+name = "mkdocs-section-index"
+version = "0.2.2"
+description = "MkDocs plugin to allow clickable sections that lead to an index page"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.dependencies]
+mkdocs = ">=1.0,<2.0"
+
+[[package]]
 name = "nltk"
 version = "3.5"
 description = "Natural Language Toolkit"
@@ -121,6 +189,25 @@ machine_learning = ["gensim", "numpy", "python-crfsuite", "scikit-learn", "scipy
 plot = ["matplotlib"]
 tgrep = ["pyparsing"]
 twitter = ["twython"]
+
+[[package]]
+name = "pygments"
+version = "2.7.3"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "pymdown-extensions"
+version = "8.0.1"
+description = "Extension pack for Python Markdown."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+Markdown = ">=3.2"
 
 [[package]]
 name = "pyyaml"
@@ -165,12 +252,31 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
 [package.extras]
 dev = ["py-make (>=0.1.0)", "twine", "argopt", "pydoc-markdown", "wheel"]
 
+[[package]]
+name = "wcmatch"
+version = "7.1"
+description = "Wildcard/glob file name matcher."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+backrefs = ">=4.1"
+bracex = ">=2.0"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "5439c181c8e630eb1a7befead4176b9e9f7f0355525f0a96989af9d70187f6cd"
+content-hash = "8d3bb9c96ab4f6ede2c31ad42d94c297bde7e0a4d13ee3a58001627a37a4bd4f"
 
 [metadata.files]
+backrefs = [
+    {file = "backrefs-4.5.tar.gz", hash = "sha256:a1bbb68f103cf514bcc481b86c40965478d779422fed7cabc5aade318d506df8"},
+]
+bracex = [
+    {file = "bracex-2.0.1-py3-none-any.whl", hash = "sha256:867fdf671c5546d1a296bc21e29c0015d379d011c0adc2e88555a2714bfecf86"},
+    {file = "bracex-2.0.1.tar.gz", hash = "sha256:1a279532492991ec66051d89367c705c6afaa8d838a2984dd2e12d78c2b86125"},
+]
 click = [
     {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
     {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
@@ -236,8 +342,32 @@ mkdocs = [
     {file = "mkdocs-1.1.2-py3-none-any.whl", hash = "sha256:096f52ff52c02c7e90332d2e53da862fde5c062086e1b5356a6e392d5d60f5e9"},
     {file = "mkdocs-1.1.2.tar.gz", hash = "sha256:f0b61e5402b99d7789efa032c7a74c90a20220a9c81749da06dbfbcbd52ffb39"},
 ]
+mkdocs-awesome-pages-plugin = [
+    {file = "mkdocs-awesome-pages-plugin-2.5.0.tar.gz", hash = "sha256:df51e908d64a7f736b4d772e19ce8ddb30c7337e06ac3dd7a29c51c431c5606e"},
+    {file = "mkdocs_awesome_pages_plugin-2.5.0-py3-none-any.whl", hash = "sha256:a215eab780757734a84e33dfa3f7d1141e43576d47aadc1b8f869a7463162c69"},
+]
+mkdocs-material = [
+    {file = "mkdocs-material-6.2.2.tar.gz", hash = "sha256:907b06b3fd4213ec07f002f2f5ef4e032b0ee5721994441f1a6b97541fc049b6"},
+    {file = "mkdocs_material-6.2.2-py2.py3-none-any.whl", hash = "sha256:4a1842b155e3c01767e65c75f5ed5185aa6516a12f7a94b33f5eea8c69b016ff"},
+]
+mkdocs-material-extensions = [
+    {file = "mkdocs-material-extensions-1.0.1.tar.gz", hash = "sha256:6947fb7f5e4291e3c61405bad3539d81e0b3cd62ae0d66ced018128af509c68f"},
+    {file = "mkdocs_material_extensions-1.0.1-py3-none-any.whl", hash = "sha256:d90c807a88348aa6d1805657ec5c0b2d8d609c110e62b9dce4daf7fa981fa338"},
+]
+mkdocs-section-index = [
+    {file = "mkdocs-section-index-0.2.2.tar.gz", hash = "sha256:24da25f31d48ac292e706a7f923ed5726c8b9ba64afb87318e0a454a110425f8"},
+    {file = "mkdocs_section_index-0.2.2-py3-none-any.whl", hash = "sha256:2bbd09d4dc9241094784b6148dc62140b5f9eb126cae55d7706bee8187a01ea2"},
+]
 nltk = [
     {file = "nltk-3.5.zip", hash = "sha256:845365449cd8c5f9731f7cb9f8bd6fd0767553b9d53af9eb1b3abf7700936b35"},
+]
+pygments = [
+    {file = "Pygments-2.7.3-py3-none-any.whl", hash = "sha256:f275b6c0909e5dafd2d6269a656aa90fa58ebf4a74f8fcf9053195d226b24a08"},
+    {file = "Pygments-2.7.3.tar.gz", hash = "sha256:ccf3acacf3782cbed4a989426012f1c535c9a90d3a7fc3f16d231b9372d2b716"},
+]
+pymdown-extensions = [
+    {file = "pymdown-extensions-8.0.1.tar.gz", hash = "sha256:9ba704052d4bdc04a7cd63f7db4ef6add73bafcef22c0cf6b2e3386cf4ece51e"},
+    {file = "pymdown_extensions-8.0.1-py2.py3-none-any.whl", hash = "sha256:a3689c04f4cbddacd9d569425c571ae07e2673cc4df63a26cdbf1abc15229137"},
 ]
 pyyaml = [
     {file = "PyYAML-5.3.1-cp27-cp27m-win32.whl", hash = "sha256:74809a57b329d6cc0fdccee6318f44b9b8649961fa73144a98735b0aaf029f1f"},
@@ -347,4 +477,8 @@ tornado = [
 tqdm = [
     {file = "tqdm-4.54.1-py2.py3-none-any.whl", hash = "sha256:d4f413aecb61c9779888c64ddf0c62910ad56dcbe857d8922bb505d4dbff0df1"},
     {file = "tqdm-4.54.1.tar.gz", hash = "sha256:38b658a3e4ecf9b4f6f8ff75ca16221ae3378b2e175d846b6b33ea3a20852cf5"},
+]
+wcmatch = [
+    {file = "wcmatch-7.1-py3-none-any.whl", hash = "sha256:c130d16e0c2a7072749d3fc7abce56fce71f6afcc4b4d9e7a1297354c07f6cfe"},
+    {file = "wcmatch-7.1.tar.gz", hash = "sha256:b67e5cfca065cb145e56724434c44157f12e1c7a147e025fd2dffe532fc318b6"},
 ]
