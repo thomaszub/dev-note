@@ -9,3 +9,4 @@ plugins:
   - section-index
 theme:
   name: material
+  custom_dir: overrides
