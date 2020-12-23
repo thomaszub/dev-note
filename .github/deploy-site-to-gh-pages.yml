@@ -1,0 +1,32 @@
+name: Deploy site to gh-pages
+on:
+  push:
+    branches:
+      - main
+env:
+  PYTHON_VERSION: 3.8
+  POETRY_VERSION: 1.14
+  ACTIONS_POETRY_VERSION: v2.1.0
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Setup Poetry
+        uses: abatilo/actions-poetry@${{ env.ACTIONS_POETRY_VERSION }}
+        with:
+          poetry-version: ${{ env.PYTHON_VERSION }}
+      - name: Install dependencies
+        run: poetry install
+      - name: Build site
+        run: mkdocs build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
