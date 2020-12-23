@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - main
-env:
-  PYTHON_VERSION: 3.8
-  POETRY_VERSION: 1.14
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,11 +12,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: $PYTHON_VERSION
+          python-version: 3.8
       - name: Setup Poetry
         uses: abatilo/actions-poetry@v2.1.0
         with:
-          poetry-version: $POETRY_VERSION
+          poetry-version: 1.14
       - name: Install dependencies
         run: poetry install
       - name: Build site
