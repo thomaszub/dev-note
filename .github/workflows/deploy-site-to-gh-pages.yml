@@ -16,11 +16,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version: $PYTHON_VERSION
       - name: Setup Poetry
-        uses: abatilo/actions-poetry@${{ env.ACTIONS_POETRY_VERSION }}
+        uses: abatilo/actions-poetry@$ACTIONS_POETRY_VERSION
         with:
-          poetry-version: ${{ env.PYTHON_VERSION }}
+          poetry-version: $PYTHON_VERSION
       - name: Install dependencies
         run: poetry install
       - name: Build site
