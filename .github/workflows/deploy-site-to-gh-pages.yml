@@ -19,7 +19,7 @@ jobs:
       - name: Setup Poetry
         uses: abatilo/actions-poetry@v2.1.0
         with:
-          poetry-version: $PYTHON_VERSION
+          poetry-version: $POETRY_VERSION
       - name: Install dependencies
         run: poetry install
       - name: Build site
