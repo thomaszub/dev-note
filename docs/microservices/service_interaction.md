@@ -4,7 +4,7 @@ This note describes interaction procedures used in microservice architectures.
 
 ## Choreography
 
-In the choreography each service knows its role in a business process and therefor all following services it has to call.
+In the choreography each service knows its role in a business process and therefore all following services it has to call.
 
 ```mermaid
 sequenceDiagram
