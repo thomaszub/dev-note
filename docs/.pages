@@ -1,4 +1,5 @@
 nav:
   - index.md
+  - agile_methods
   - design_pattern
   - microservices
