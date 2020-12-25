@@ -17,5 +17,5 @@ sequenceDiagram
 ## Weak reference
 
 In the case that the observable holds a strong reference to an observer,
-the observer would not be cleaned up by e.g garbage collection or reference counting.
+the observer would not be cleaned up by e.g garbage collection or reference counting if its life cycle ends.
 This can be solved by weak references. 
