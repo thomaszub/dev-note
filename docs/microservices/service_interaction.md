@@ -4,7 +4,7 @@ This note describes interaction procedures used in microservice architectures.
 
 ## Choreography
 
-In the choreography each service knows its role in a business process and therefore all following services it has to call.
+In the choreography each service knows its role in a business process and therefore it needs to know all following services it has to call for the business process.
 
 ```mermaid
 sequenceDiagram
@@ -19,7 +19,7 @@ __Note__: Response side suppressed for clarity.
 
 ## Orchestration
 
-In the orchestration a business process is executed by a central coordinator. The services itself do not have to know the underlying business process.
+In the orchestration a business process is executed by a central coordinator. The services theirself do not have to know the underlying business process and services involved in the business process.
 
 ```mermaid
 sequenceDiagram
