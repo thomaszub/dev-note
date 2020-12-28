@@ -293,6 +293,22 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vanishing-exploding-gradient-problem">
+    Vanishing / exploding gradient problem
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#further-readings">
+    Further readings:
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -303,7 +319,37 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="recurrent-neural-networks">Recurrent neural networks</h1>
-<p>This note is about recurrent neural networks (RNN). These networks belong to supervised learning and are used in the analysis and prediction of time series or series like data. </p>
+<p>This note is about recurrent neural networks (RNN). These networks belong to supervised learning and are used in the analysis and prediction of time series or series like data.</p>
+<p>There are three general types of RNNs describing the series relation in input and output:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One to many</td>
+<td>Sentence describing image</td>
+</tr>
+<tr>
+<td>Many to one</td>
+<td>Sentiment analysis</td>
+</tr>
+<tr>
+<td>Many to many</td>
+<td>Sentence translation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vanishing-exploding-gradient-problem">Vanishing / exploding gradient problem</h2>
+<p>RNNs can inhibit the vanishing / exploding gradient problem.
+One popular solution ist the use of long short-term memory (LSTM) nodes.</p>
+<h2 id="further-readings">Further readings:</h2>
+<ul>
+<li>Diplomarbeit Josef Hochreiter, 1991: <a href="http://people.idsia.ch/~juergen/SeppHochreiter1991ThesisAdvisorSchmidhuber.pdf">http://people.idsia.ch/~juergen/SeppHochreiter1991ThesisAdvisorSchmidhuber.pdf</a></li>
+</ul>
 </article>
 </div>
 </div>
