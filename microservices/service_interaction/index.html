@@ -196,9 +196,71 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
 <label class="md-nav__link" for="nav-4">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link" href="../../machine_learning/" style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Machine learning
+      </a>
+</label>
+<nav aria-label="Machine learning" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="nav-4">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link" href="../../machine_learning/" style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Machine learning
+        </a>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../machine_learning/activation_functions/">
+      Activation functions
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../machine_learning/artifical_neural_networks/">
+      Artifical neural networks
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../machine_learning/convolutional_neural_networks/">
+      Convolutional neural networks
+    </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" id="nav-4-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-4-4">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Recurrent neural networks
+      </a>
+</label>
+<nav aria-label="Recurrent neural networks" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-4-4">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Recurrent neural networks
+        </a>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/ltsm/">
+      Long short-term memory
+    </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-5" id="nav-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-5">
 <span class="md-nav__icon md-icon"></span>
 <a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
       
@@ -206,7 +268,7 @@
       </a>
 </label>
 <nav aria-label="Microservices" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="nav-4">
+<label class="md-nav__title" for="nav-5">
 <span class="md-nav__icon md-icon"></span>
 <a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
         
@@ -285,7 +347,7 @@
 <h1 id="service-interaction">Service interaction</h1>
 <p>This note describes interaction procedures used in microservice architectures.</p>
 <h2 id="choreography">Choreography</h2>
-<p>In the choreography each service knows its role in a business process and therefore all following services it has to call.</p>
+<p>In the choreography each service knows its role in a business process and therefore it needs to know all following services it has to call for the business process.</p>
 <div class="mermaid">sequenceDiagram
   participant Service1
   participant Service2
@@ -296,7 +358,7 @@
 </div>
 <p><strong>Note</strong>: Response side suppressed for clarity.</p>
 <h2 id="orchestration">Orchestration</h2>
-<p>In the orchestration a business process is executed by a central coordinator. The services itself do not have to know the underlying business process.</p>
+<p>In the orchestration a business process is executed by a central coordinator. The services theirself do not have to know the underlying business process and services involved in the business process.</p>
 <div class="mermaid">sequenceDiagram
   participant Coordinator
   participant Service1
@@ -359,5 +421,8 @@
           }, typeof search !== "undefined" && search)
         })
       </script>
+<script src="../../_config/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
 <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
 </html>
