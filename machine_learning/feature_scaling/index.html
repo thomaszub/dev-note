@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/images/favicon.png" rel="shortcut icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-6.2.2" name="generator"/>
-<title>Service interaction - Dev Note</title>
+<title>Feature scaling - Dev Note</title>
 <link href="../../assets/stylesheets/main.73f7c429.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.39b8e14a.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -19,7 +19,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#service-interaction">
+<a class="md-skip" href="#feature-scaling">
           Skip to content
         </a>
 </div>
@@ -43,7 +43,7 @@
 <div class="md-header-nav__topic">
 <span class="md-ellipsis">
             
-              Service interaction
+              Feature scaling
             
           </span>
 </div>
@@ -196,11 +196,11 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-4" id="nav-4" type="checkbox"/>
 <label class="md-nav__link" for="nav-4">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../../machine_learning/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
       
         Machine learning
       </a>
@@ -208,29 +208,55 @@
 <nav aria-label="Machine learning" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="nav-4">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../../machine_learning/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
         
           Machine learning
         </a>
 </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../machine_learning/activation_functions/">
+<a class="md-nav__link" href="../activation_functions/">
       Activation functions
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../machine_learning/feature_scaling/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link md-nav__link--active" href="./" style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Feature scaling
+        </a>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
       Feature scaling
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#standardisation">
+    Standardisation
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../machine_learning/artifical_neural_networks/">
+<a class="md-nav__link" href="#normalisation">
+    Normalisation
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../artifical_neural_networks/">
       Artifical neural networks
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../machine_learning/convolutional_neural_networks/">
+<a class="md-nav__link" href="../convolutional_neural_networks/">
       Convolutional neural networks
     </a>
 </li>
@@ -238,7 +264,7 @@
 <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" id="nav-4-5" type="checkbox"/>
 <label class="md-nav__link" for="nav-4-5">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
       
         Recurrent neural networks
       </a>
@@ -246,14 +272,14 @@
 <nav aria-label="Recurrent neural networks" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="nav-4-5">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
         
           Recurrent neural networks
         </a>
 </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/ltsm/">
+<a class="md-nav__link" href="../recurrent_neural_networks/ltsm/">
       Long short-term memory
     </a>
 </li>
@@ -263,11 +289,11 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-5" id="nav-5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" id="nav-5" type="checkbox"/>
 <label class="md-nav__link" for="nav-5">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../../microservices/" style="margin: initial; padding: initial; pointer-events: initial">
       
         Microservices
       </a>
@@ -275,42 +301,16 @@
 <nav aria-label="Microservices" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="nav-5">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../../microservices/" style="margin: initial; padding: initial; pointer-events: initial">
         
           Microservices
         </a>
 </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link md-nav__link--active" href="./" style="margin: initial; padding: initial; pointer-events: initial">
-        
-          Service interaction
-        </a>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../microservices/service_interaction/">
       Service interaction
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#choreography">
-    Choreography
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#orchestration">
-    Orchestration
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -330,13 +330,13 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#choreography">
-    Choreography
+<a class="md-nav__link" href="#standardisation">
+    Standardisation
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#orchestration">
-    Orchestration
+<a class="md-nav__link" href="#normalisation">
+    Normalisation
   </a>
 </li>
 </ul>
@@ -346,35 +346,27 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/thomaszub/dev-note/edit/master/docs/microservices/service_interaction.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/thomaszub/dev-note/edit/master/docs/machine_learning/feature_scaling.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="service-interaction">Service interaction</h1>
-<p>This note describes interaction procedures used in microservice architectures.</p>
-<h2 id="choreography">Choreography</h2>
-<p>In the choreography each service knows its role in a business process and therefore it needs to know all following services it has to call for the business process.</p>
-<p><div class="highlight"><pre><span></span><code>sequenceDiagram
-  participant Service1
-  participant Service2
-  participant Service3
-  Service1-&gt;&gt;Service2: request
-  Service1-&gt;&gt;Service3: request
-  Service3-&gt;&gt;Service2: request
-</code></pre></div>
-<strong>Note</strong>: Response side suppressed for clarity.</p>
-<h2 id="orchestration">Orchestration</h2>
-<p>In the orchestration a business process is executed by a central coordinator. The services theirself do not have to know the underlying business process and services involved in the business process.</p>
-<p><div class="highlight"><pre><span></span><code>sequenceDiagram
-  participant Coordinator
-  participant Service1
-  participant Service2
-  participant Service3
-  Coordinator-&gt;&gt;Service1: request
-  Coordinator-&gt;&gt;Service2: request
-  Coordinator-&gt;&gt;Service3: request
-  Coordinator-&gt;&gt;Service2: request
-</code></pre></div>
-<strong>Note</strong>: Response side suppressed for clarity.</p>
+<h1 id="feature-scaling">Feature scaling</h1>
+<p>Feature scaling is a data preprocessing step to ease training of neural networks by reducing the numeric scale of different features to a uniform scale.</p>
+<h2 id="standardisation">Standardisation</h2>
+<p>Standardisation transforms the feature distribution of data to zero mean and unit variance:</p>
+<div class="arithmatex">\[
+z = \frac{x - \operatorname{mean}(x)}{\operatorname{std}(x)}
+\]</div>
+<p><em>Python:</em>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+</code></pre></div></p>
+<h2 id="normalisation">Normalisation</h2>
+<p>Normalisation transforms the feature distribution to the interval <span class="arithmatex">\([0,1]\)</span>:</p>
+<div class="arithmatex">\[
+z = \frac{x - \min(x)}{\max(x) - \min(x)}
+\]</div>
+<p><em>Python:</em>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+</code></pre></div></p>
 </article>
 </div>
 </div>
