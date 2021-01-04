@@ -263,8 +263,18 @@
     Sigmoid / Logistic
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#softmax">
+    Softmax
+  </a>
+</li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../data_preprocessing/">
+      Data preprocessing
+    </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../feature_scaling/">
@@ -282,8 +292,8 @@
     </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-5" id="nav-5-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-5-5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-6" id="nav-5-6" type="checkbox"/>
+<label class="md-nav__link" for="nav-5-6">
 <span class="md-nav__icon md-icon"></span>
 <a class="md-nav__link" href="../recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
       
@@ -291,7 +301,7 @@
       </a>
 </label>
 <nav aria-label="Recurrent neural networks" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-5-5">
+<label class="md-nav__title" for="nav-5-6">
 <span class="md-nav__icon md-icon"></span>
 <a class="md-nav__link" href="../recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
         
@@ -355,6 +365,11 @@
     Sigmoid / Logistic
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#softmax">
+    Softmax
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -371,6 +386,17 @@
 <div class="arithmatex">\[
   \sigma(x) = \frac{1}{1 + e^{-x}}
 \]</div>
+<p>As the Sigmoid function has the bounds [0, 1], it is suited for multi-label classification as the element results can be trained as probabilities for a certain label to be true or not.</p>
+<h2 id="softmax">Softmax</h2>
+<p>The Softmax activation function is defined by</p>
+<div class="arithmatex">\[
+  \sigma_j(x) = \frac{e^{x_j}}{\sum_j{e^{x_j}}}
+\]</div>
+<p>In comparison to most activation functions, the sum of all element-wise results is constrained, precisely speaking:</p>
+<div class="arithmatex">\[
+  \sum_j \sigma_j(x) = 1
+\]</div>
+<p>Therefore the Softmax function is suited for multi-class classification as the element results can be trained as probabilities for a certain class in one category to be true or not.</p>
 </article>
 </div>
 </div>
