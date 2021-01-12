@@ -25,3 +25,9 @@ from sklearn.compose import ColumnTransformer
 
 *Note:* Does currently not work with a LabelEncoder.
 
+## Image data
+
+*Python:*
+```python
+from keras.preprocessing.image import ImageDataGenerator
+```
