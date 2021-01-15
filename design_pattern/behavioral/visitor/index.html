@@ -187,9 +187,29 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link md-nav__link--active" href="./" style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Visitor
+        </a>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
       Visitor
     </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#java">
+    Java
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -335,6 +355,17 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#java">
+    Java
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -347,6 +378,37 @@
 <h1 id="visitor">Visitor</h1>
 <p>The visitor pattern separates algorithms from the object structures they work on.
 If supported, this can be done by double dispatch or reflection.</p>
+<h2 id="java">Java</h2>
+<p>In Java this can be done with the following interfaces including return value and exception propagation:
+<div class="highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Visitor</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span> <span class="n">E</span> <span class="kd">extends</span> <span class="n">Throwable</span><span class="o">&gt;</span> <span class="p">{</span>
+
+    <span class="n">R</span> <span class="nf">visit</span><span class="p">(</span><span class="n">ConcreteNode1</span> <span class="n">node</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">E</span><span class="p">;</span>
+
+    <span class="n">R</span> <span class="nf">visit</span><span class="p">(</span><span class="n">ConcreteNode2</span> <span class="n">node</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">E</span><span class="p">;</span>
+
+    <span class="p">...</span>
+
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Node</span> <span class="p">{</span>
+
+    <span class="o">&lt;</span><span class="n">R</span><span class="p">,</span> <span class="n">E</span> <span class="kd">extends</span> <span class="n">Throwable</span><span class="o">&gt;</span> <span class="n">R</span> <span class="nf">accept</span><span class="p">(</span><span class="n">Visitor</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span> <span class="n">E</span><span class="o">&gt;</span> <span class="n">visitor</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">E</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="c1">//Example of concrete implementation</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ConcreteNode1</span> <span class="kd">implements</span> <span class="n">Node</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="o">&lt;</span><span class="n">R</span><span class="p">,</span> <span class="n">E</span> <span class="kd">extends</span> <span class="n">Throwable</span><span class="o">&gt;</span> <span class="n">R</span> <span class="nf">accept</span><span class="p">(</span><span class="n">Visitor</span><span class="o">&lt;</span><span class="n">R</span><span class="p">,</span> <span class="n">E</span><span class="o">&gt;</span> <span class="n">visitor</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">E</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">visitor</span><span class="p">.</span><span class="na">visit</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="p">...</span>
+
+<span class="p">}</span>
+</code></pre></div>
+The implementation for a concrete node looks always the same and allows passing Void for R if no returned value is needed.</p>
 </article>
 </div>
 </div>
