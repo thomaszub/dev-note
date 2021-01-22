@@ -389,18 +389,18 @@
 <p>This note describes interaction procedures used in microservice architectures.</p>
 <h2 id="choreography">Choreography</h2>
 <p>In the choreography each service knows its role in a business process and therefore it needs to know all following services it has to call for the business process.</p>
-<p><div class="highlight"><pre><span></span><code>sequenceDiagram
+<p><div class="mermaid">sequenceDiagram
   participant Service1
   participant Service2
   participant Service3
   Service1-&gt;&gt;Service2: request
   Service1-&gt;&gt;Service3: request
   Service3-&gt;&gt;Service2: request
-</code></pre></div>
+</div>
 <strong>Note</strong>: Response side suppressed for clarity.</p>
 <h2 id="orchestration">Orchestration</h2>
 <p>In the orchestration a business process is executed by a central coordinator. The services theirself do not have to know the underlying business process and services involved in the business process.</p>
-<p><div class="highlight"><pre><span></span><code>sequenceDiagram
+<p><div class="mermaid">sequenceDiagram
   participant Coordinator
   participant Service1
   participant Service2
@@ -409,7 +409,7 @@
   Coordinator-&gt;&gt;Service2: request
   Coordinator-&gt;&gt;Service3: request
   Coordinator-&gt;&gt;Service2: request
-</code></pre></div>
+</div>
 <strong>Note</strong>: Response side suppressed for clarity.</p>
 </article>
 </div>
@@ -465,5 +465,5 @@
 <script src="../../_config/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
-</body>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
 </html>

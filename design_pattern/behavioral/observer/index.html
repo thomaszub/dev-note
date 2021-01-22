@@ -378,7 +378,7 @@
 <h1 id="observer">Observer</h1>
 <p>The observer is publish-subscribe-pattern typically found in event-driven systems.
 The observable maintains a list of observers and notifies them on events like changes in state.</p>
-<div class="highlight"><pre><span></span><code>sequenceDiagram
+<div class="mermaid">sequenceDiagram
   participant Observable
   participant Observer1
   participant Observer2
@@ -387,7 +387,7 @@ The observable maintains a list of observers and notifies them on events like ch
   Note over Observable: Event occurs in Observable
   Observable-&gt;&gt;Observer1: update(Event)
   Observable-&gt;&gt;Observer2: update(Event)
-</code></pre></div>
+</div>
 <h2 id="weak-reference">Weak reference</h2>
 <p>In the case that the observable holds a strong reference to an observer,
 the observer would not be cleaned up by e.g garbage collection or reference counting if its life cycle ends.
@@ -446,5 +446,5 @@ This can be solved by weak references. </p>
 <script src="../../../_config/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
-</body>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
 </html>
