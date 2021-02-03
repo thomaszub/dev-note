@@ -305,6 +305,25 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#extensions">
+    Extensions
+  </a>
+<nav aria-label="Extensions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regularization">
+    Regularization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#momentum">
+    Momentum
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#cross-entropy">
     Cross entropy
   </a>
@@ -392,6 +411,25 @@
     </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#extensions">
+    Extensions
+  </a>
+<nav aria-label="Extensions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regularization">
+    Regularization
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#momentum">
+    Momentum
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#cross-entropy">
     Cross entropy
   </a>
@@ -408,6 +446,22 @@
 </a>
 <h1 id="loss-functions">Loss functions</h1>
 <p>This note is about loss functions used in training neural networks.</p>
+<h2 id="extensions">Extensions</h2>
+<p>The folowing extension can be added to induce effects in minimizing the loss function.</p>
+<h3 id="regularization">Regularization</h3>
+<p>Regularization penalizes high values of the parameters in a neural network and helps against overfitting.
+The corresponding loss extension term has the form</p>
+<div class="arithmatex">\[
+L_p(\Theta) = \lambda \|\Theta\|^p
+\]</div>
+<p>with <span class="arithmatex">\( \lambda \)</span> the regularization factor, <span class="arithmatex">\( \Theta \)</span> the training parameters and <span class="arithmatex">\( p \in \mathbb{N} \)</span>, typically with <span class="arithmatex">\( p = 2 \)</span> (L2-Norm).</p>
+<h3 id="momentum">Momentum</h3>
+<p>To mitigate oscillations in the training of the parameters, a momentum extension can be used.
+This term is added to the update of the parameters in gradient descent</p>
+<div class="arithmatex">\[
+  \Theta^{(t+1)} = \Theta^{(t)} + \Delta \Theta_{GD}^{(t)} + \nu \Delta \Theta^{(t-1)} = \Theta^{(t)} + \Delta \Theta^{(t)}
+\]</div>
+<p>with <span class="arithmatex">\( t \)</span> the update step, <span class="arithmatex">\( \Theta \)</span> the training parameters and <span class="arithmatex">\( \nu \)</span> the momentum factor.</p>
 <h2 id="cross-entropy">Cross entropy</h2>
 <p>For classification problems the output of the network can be choosen to be a vector of probabilities <span class="arithmatex">\( q(y) \)</span> for the different classes <span class="arithmatex">\( y \in Y \)</span>. With the expected result <span class="arithmatex">\( p(y) = \delta_{y,\hat{y}} \)</span> and the correct class <span class="arithmatex">\( \hat{y} \)</span>, the cross entropy can be used:</p>
 <div class="arithmatex">\[
