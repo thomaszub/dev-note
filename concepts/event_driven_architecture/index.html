@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-7.1.3" name="generator"/>
-<title>Feature scaling - Dev Note</title>
+<title>Event driven architecture - Dev Note</title>
 <link href="../../assets/stylesheets/main.e35208c4.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -20,7 +20,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#feature-scaling">
+<a class="md-skip" href="#event-driven-architecture">
           Skip to content
         </a>
 </div>
@@ -44,7 +44,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Feature scaling
+              Event driven architecture
             
           </span>
 </div>
@@ -145,11 +145,11 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../../concepts/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
         
           Concepts
         </a>
@@ -157,26 +157,99 @@
 <nav aria-label="Concepts" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../../concepts/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
           
             Concepts
           </a>
 </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../concepts/clean_code/">
+<a class="md-nav__link" href="../clean_code/">
         Clean code
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../concepts/domain_driven_design/">
+<a class="md-nav__link" href="../domain_driven_design/">
         Domain driven design
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../concepts/event_driven_architecture/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+<a class="md-nav__link md-nav__link--active" href="./" style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Event driven architecture
+          </a>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Event driven architecture
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#event-notification">
+    Event notification
+  </a>
+<nav aria-label="Event notification" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro">
+    Pro
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contra">
+    Contra
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#event-carried-state-transfer">
+    Event-carried state transfer
+  </a>
+<nav aria-label="Event-carried state transfer" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro_1">
+    Pro
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contra_1">
+    Contra
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#event-sourcing">
+    Event sourcing
+  </a>
+<nav aria-label="Event sourcing" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro_2">
+    Pro
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contra_2">
+    Contra
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -259,11 +332,11 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
 <label class="md-nav__link" for="__nav_6">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../../machine_learning/" style="margin: initial; padding: initial; pointer-events: initial">
         
           Machine learning
         </a>
@@ -271,65 +344,39 @@
 <nav aria-label="Machine learning" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_6">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../../machine_learning/" style="margin: initial; padding: initial; pointer-events: initial">
           
             Machine learning
           </a>
 </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../activation_functions/">
+<a class="md-nav__link" href="../../machine_learning/activation_functions/">
         Activation functions
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../data_preprocessing/">
+<a class="md-nav__link" href="../../machine_learning/data_preprocessing/">
         Data preprocessing
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link md-nav__link--active" href="./" style="margin: initial; padding: initial; pointer-events: initial">
-          
-            Feature scaling
-          </a>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../machine_learning/feature_scaling/">
         Feature scaling
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#standardisation">
-    Standardisation
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#normalisation">
-    Normalisation
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../loss_functions/">
+<a class="md-nav__link" href="../../machine_learning/loss_functions/">
         Loss functions
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../artifical_neural_networks/">
+<a class="md-nav__link" href="../../machine_learning/artifical_neural_networks/">
         Artifical neural networks
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../convolutional_neural_networks/">
+<a class="md-nav__link" href="../../machine_learning/convolutional_neural_networks/">
         Convolutional neural networks
       </a>
 </li>
@@ -337,7 +384,7 @@
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_7" id="__nav_6_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_6_7">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
         
           Recurrent neural networks
         </a>
@@ -345,14 +392,14 @@
 <nav aria-label="Recurrent neural networks" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_6_7">
 <span class="md-nav__icon md-icon"></span>
-<a class="md-nav__link" href="../recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
+<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/" style="margin: initial; padding: initial; pointer-events: initial">
           
             Recurrent neural networks
           </a>
 </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../recurrent_neural_networks/ltsm/">
+<a class="md-nav__link" href="../../machine_learning/recurrent_neural_networks/ltsm/">
         Long short-term memory
       </a>
 </li>
@@ -408,14 +455,61 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#standardisation">
-    Standardisation
+<a class="md-nav__link" href="#event-notification">
+    Event notification
+  </a>
+<nav aria-label="Event notification" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro">
+    Pro
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#normalisation">
-    Normalisation
+<a class="md-nav__link" href="#contra">
+    Contra
   </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#event-carried-state-transfer">
+    Event-carried state transfer
+  </a>
+<nav aria-label="Event-carried state transfer" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro_1">
+    Pro
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contra_1">
+    Contra
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#event-sourcing">
+    Event sourcing
+  </a>
+<nav aria-label="Event sourcing" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro_2">
+    Pro
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#contra_2">
+    Contra
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -424,27 +518,34 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/thomaszub/dev-note/edit/master/docs/machine_learning/feature_scaling.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/thomaszub/dev-note/edit/master/docs/concepts/event_driven_architecture/index.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="feature-scaling">Feature scaling</h1>
-<p>Feature scaling is a data preprocessing step to ease training of neural networks by reducing the numeric scale of different features to a uniform scale.</p>
-<h2 id="standardisation">Standardisation</h2>
-<p>Standardisation transforms the feature distribution of data to zero mean and unit variance:</p>
-<div class="arithmatex">\[
-z = \frac{x - \operatorname{mean}(x)}{\operatorname{std}(x)}
-\]</div>
-<p><em>Python:</em>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
-</code></pre></div></p>
-<h2 id="normalisation">Normalisation</h2>
-<p>Normalisation transforms the feature distribution to the interval <span class="arithmatex">\([0,1]\)</span>:</p>
-<div class="arithmatex">\[
-z = \frac{x - \min(x)}{\max(x) - \min(x)}
-\]</div>
-<p><em>Python:</em>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
-</code></pre></div></p>
+<h1 id="event-driven-architecture">Event-driven architecture</h1>
+<h2 id="event-notification">Event notification</h2>
+<h3 id="pro">Pro</h3>
+<ul>
+<li>Decoupling sender and receiver</li>
+</ul>
+<h3 id="contra">Contra</h3>
+<ul>
+<li>No statement of overall behavior</li>
+</ul>
+<h2 id="event-carried-state-transfer">Event-carried state transfer</h2>
+<h3 id="pro_1">Pro</h3>
+<ul>
+<li>Further decoupling</li>
+<li>Reduced load on sender</li>
+</ul>
+<h3 id="contra_1">Contra</h3>
+<ul>
+<li>Replicated data, eventual consistency</li>
+</ul>
+<h2 id="event-sourcing">Event sourcing</h2>
+<h3 id="pro_2">Pro</h3>
+<p>*</p>
+<h3 id="contra_2">Contra</h3>
+<p>*</p>
 </article>
 </div>
 </div>
