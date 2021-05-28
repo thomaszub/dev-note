@@ -33,3 +33,9 @@ sequenceDiagram
   Coordinator->>Service2: request
 ```
 __Note__: Response side suppressed for clarity.
+
+## Another definition
+
+Choreography = Event-driven communication
+
+Orchestration = Command-driven communication
