@@ -224,14 +224,14 @@ requests = "*"
 
 [[package]]
 name = "mkdocs-section-index"
-version = "0.2.3"
+version = "0.3.1"
 description = "MkDocs plugin to allow clickable sections that lead to an index page"
 category = "main"
 optional = false
 python-versions = ">=3.6,<4.0"
 
 [package.dependencies]
-mkdocs = ">=1.0,<2.0"
+mkdocs = ">=1.1,<2.0"
 
 [[package]]
 name = "nltk"
@@ -372,7 +372,7 @@ bracex = ">=2.1.1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "abacd4233480be42194d1c0de9ba560ad1c771585e7a23e975997eb7dfc83986"
+content-hash = "06cb39fa32be16d10ad9f3598c8254af48579d23ade423b15b420b6022de91dc"
 
 [metadata.files]
 beautifulsoup4 = [
@@ -504,8 +504,8 @@ mkdocs-mermaid2-plugin = [
     {file = "mkdocs_mermaid2_plugin-0.5.1-py3-none-any.whl", hash = "sha256:03709ef450ddcbd0a07ebeee2b68d6a90e63c4611401c2d3cf8bca24e075ff3e"},
 ]
 mkdocs-section-index = [
-    {file = "mkdocs-section-index-0.2.3.tar.gz", hash = "sha256:0582c3e83053b4295815484df56f9e21f34e215ef2cdf8fe68fd0bf4e7aa62d2"},
-    {file = "mkdocs_section_index-0.2.3-py3-none-any.whl", hash = "sha256:eeda17a21f84b19e9848bb4459602e3ceb5737a735ec570c96f99ae676c70464"},
+    {file = "mkdocs-section-index-0.3.1.tar.gz", hash = "sha256:f31a4950c411ef2b32450bb2755765ce27f9fe3f37a5c33ddbf6852b7c9008e0"},
+    {file = "mkdocs_section_index-0.3.1-py3-none-any.whl", hash = "sha256:1e2aed74053664b1a5e0f75f7e601aedd386f5aaed1ae3b64b4afe70d39ea73a"},
 ]
 nltk = [
     {file = "nltk-3.6.2-py3-none-any.whl", hash = "sha256:240e23ab1ab159ef9940777d30c7c72d7e76d91877099218a7585370c11f6b9e"},
