@@ -180,7 +180,7 @@ wcmatch = ">=7"
 
 [[package]]
 name = "mkdocs-material"
-version = "7.2.4"
+version = "7.2.5"
 description = "A Material Design theme for MkDocs"
 category = "main"
 optional = false
@@ -501,8 +501,8 @@ mkdocs-awesome-pages-plugin = [
     {file = "mkdocs_awesome_pages_plugin-2.5.0-py3-none-any.whl", hash = "sha256:a215eab780757734a84e33dfa3f7d1141e43576d47aadc1b8f869a7463162c69"},
 ]
 mkdocs-material = [
-    {file = "mkdocs-material-7.2.4.tar.gz", hash = "sha256:0e19402480a80add9b0fe777e9be80fafb9583ec2c91e43deaef29d1a432d018"},
-    {file = "mkdocs_material-7.2.4-py2.py3-none-any.whl", hash = "sha256:f554c84286b485c7d47e89c14c2fc062fc57b65f9c26fa1687720fe4f569b837"},
+    {file = "mkdocs-material-7.2.5.tar.gz", hash = "sha256:e2a3aa5e20fbdb260d22ec56c01247896c6ae743702e1cd9023fd149a4ae9890"},
+    {file = "mkdocs_material-7.2.5-py2.py3-none-any.whl", hash = "sha256:332bafc1584d2d229aa05f7894b4b0f62055fc0d05c96e6ef1785c86ef6e8f91"},
 ]
 mkdocs-material-extensions = [
     {file = "mkdocs-material-extensions-1.0.1.tar.gz", hash = "sha256:6947fb7f5e4291e3c61405bad3539d81e0b3cd62ae0d66ced018128af509c68f"},
