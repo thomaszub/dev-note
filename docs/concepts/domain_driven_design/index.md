@@ -15,3 +15,7 @@ An example of different bounded contexts with a customer model is:
 * Support -> Tickets
 
 All these three bounded contexts share the customer as a boundary.
+
+## Aggregate
+
+"Aggregate is synonymous with transactional consistency boundary. “ Vaughn Vernon. „Implementing Domain-Driven Design.“
