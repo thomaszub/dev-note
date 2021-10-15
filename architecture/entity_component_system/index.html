@@ -156,9 +156,31 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Entity component system
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Entity component system
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#entity">
+    Entity
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#component">
+    Component
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../event_driven/">
@@ -400,6 +422,22 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#entity">
+    Entity
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#component">
+    Component
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -410,6 +448,12 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="entity-component-system-architecture">Entity-Component-System architecture</h1>
+<p>The Entity-Component-System architecture is mainly used in game development to overcome the design problem of a domain with many entities with different but shared characteristics, named components, which can possibly change during runtime. 
+In a naive design this would lead to a deep and complex inheritence structure or many different classes injecting the necessary components with a mechanism to handle the removal or addition of components.</p>
+<p>The Entity-Component-System architecture is mainly data-driven and can be seen as the implementation of an in-memory database.</p>
+<h2 id="entity">Entity</h2>
+<p>The entity is an object of the domain, which can be recognised by a unique identifier. Typically the unique identifier is the only member of an entity class.</p>
+<h2 id="component">Component</h2>
 <p>TODO</p>
 </article>
 </div>
