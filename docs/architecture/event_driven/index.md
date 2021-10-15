@@ -16,14 +16,14 @@
 
 ## Event sourcing
 ### Pro
-* TODO
+TODO
 
 ### Contra
-* TODO
+TODO
 
 ## CQRS
 ### Pro
-* TODO
+TODO
 
 ### Contra
-* TODO
+TODO
