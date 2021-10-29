@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.8"
 mkdocs = "^1.2"
 mkdocs-section-index = "^0.3"
-mkdocs-awesome-pages-plugin = "^2.5"
+mkdocs-awesome-pages-plugin = "^2.6"
 mkdocs-material = "^7.3"
 mkdocs-mermaid2-plugin = "^0.5"
 
