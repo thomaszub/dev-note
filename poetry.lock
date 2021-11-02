@@ -180,7 +180,7 @@ wcmatch = ">=7"
 
 [[package]]
 name = "mkdocs-material"
-version = "7.3.5"
+version = "7.3.6"
 description = "A Material Design theme for MkDocs"
 category = "main"
 optional = false
@@ -191,7 +191,7 @@ jinja2 = ">=2.11.1"
 markdown = ">=3.2"
 mkdocs = ">=1.2.3"
 mkdocs-material-extensions = ">=1.0"
-pygments = ">=2.4"
+pygments = ">=2.10"
 pymdown-extensions = ">=9.0"
 
 [[package]]
@@ -246,7 +246,7 @@ pyparsing = ">=2.0.2"
 
 [[package]]
 name = "pygments"
-version = "2.8.1"
+version = "2.10.0"
 description = "Pygments is a syntax highlighting package written in Python."
 category = "main"
 optional = false
@@ -503,8 +503,8 @@ mkdocs-awesome-pages-plugin = [
     {file = "mkdocs_awesome_pages_plugin-2.6.0-py3-none-any.whl", hash = "sha256:71cf3438c4ab63e0934f1a5ca14b859d66fba00a70886668f72c25e521ad028f"},
 ]
 mkdocs-material = [
-    {file = "mkdocs-material-7.3.5.tar.gz", hash = "sha256:5edbf86b4249f413d54b8e2f1f2f8f1d2a9345f45e928303f4541e1d51f362c0"},
-    {file = "mkdocs_material-7.3.5-py2.py3-none-any.whl", hash = "sha256:9fc09d2636d3249a7d75813c16360f3aa6987dff792c0e19f218fc80d48c2296"},
+    {file = "mkdocs-material-7.3.6.tar.gz", hash = "sha256:1b1dbd8ef2508b358d93af55a5c5db3f141c95667fad802301ec621c40c7c217"},
+    {file = "mkdocs_material-7.3.6-py2.py3-none-any.whl", hash = "sha256:1b6b3e9e09f922c2d7f1160fe15c8f43d4adc0d6fb81aa6ff0cbc7ef5b78ec75"},
 ]
 mkdocs-material-extensions = [
     {file = "mkdocs-material-extensions-1.0.1.tar.gz", hash = "sha256:6947fb7f5e4291e3c61405bad3539d81e0b3cd62ae0d66ced018128af509c68f"},
@@ -523,8 +523,8 @@ packaging = [
     {file = "packaging-20.9.tar.gz", hash = "sha256:5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5"},
 ]
 pygments = [
-    {file = "Pygments-2.8.1-py3-none-any.whl", hash = "sha256:534ef71d539ae97d4c3a4cf7d6f110f214b0e687e92f9cb9d2a3b0d3101289c8"},
-    {file = "Pygments-2.8.1.tar.gz", hash = "sha256:2656e1a6edcdabf4275f9a3640db59fd5de107d88e8663c5d4e9a0fa62f77f94"},
+    {file = "Pygments-2.10.0-py3-none-any.whl", hash = "sha256:b8e67fe6af78f492b3c4b3e2970c0624cbf08beb1e493b2c99b9fa1b67a20380"},
+    {file = "Pygments-2.10.0.tar.gz", hash = "sha256:f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"},
 ]
 pymdown-extensions = [
     {file = "pymdown-extensions-9.0.tar.gz", hash = "sha256:01e4bec7f4b16beaba0087a74496401cf11afd69e3a11fe95cb593e5c698ef40"},
