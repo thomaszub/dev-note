@@ -168,7 +168,7 @@ i18n = ["babel (>=2.9.0)"]
 
 [[package]]
 name = "mkdocs-awesome-pages-plugin"
-version = "2.6.0"
+version = "2.6.1"
 description = "An MkDocs plugin that simplifies configuring page titles and their order"
 category = "main"
 optional = false
@@ -499,8 +499,8 @@ mkdocs = [
     {file = "mkdocs-1.2.3.tar.gz", hash = "sha256:89f5a094764381cda656af4298727c9f53dc3e602983087e1fe96ea1df24f4c1"},
 ]
 mkdocs-awesome-pages-plugin = [
-    {file = "mkdocs-awesome-pages-plugin-2.6.0.tar.gz", hash = "sha256:822c4a7128d847b07852f5e67d1012eda2705deeba6b966506bfcff188f287d8"},
-    {file = "mkdocs_awesome_pages_plugin-2.6.0-py3-none-any.whl", hash = "sha256:71cf3438c4ab63e0934f1a5ca14b859d66fba00a70886668f72c25e521ad028f"},
+    {file = "mkdocs-awesome-pages-plugin-2.6.1.tar.gz", hash = "sha256:8f2f803a3d4a2cd2e290644b1b8c54cf2ae942db9ce91021c2ba858a991a3a8a"},
+    {file = "mkdocs_awesome_pages_plugin-2.6.1-py3-none-any.whl", hash = "sha256:43994aedadca881088e5d6bb420140a73ce517ca3e070972715f93b086c9c497"},
 ]
 mkdocs-material = [
     {file = "mkdocs-material-7.3.6.tar.gz", hash = "sha256:1b1dbd8ef2508b358d93af55a5c5db3f141c95667fad802301ec621c40c7c217"},
