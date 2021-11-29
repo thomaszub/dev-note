@@ -179,6 +179,11 @@
     Component
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system">
+    System
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -437,6 +442,11 @@
     Component
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system">
+    System
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -454,7 +464,9 @@ In a naive design this would lead to a deep and complex inheritence structure or
 <h2 id="entity">Entity</h2>
 <p>The entity is an object of the domain, which can be recognised by a unique identifier. Typically the unique identifier is the only member of an entity class.</p>
 <h2 id="component">Component</h2>
-<p>TODO</p>
+<p>A component represents a functional aspect of the domain, one or multiple instances of a component represent this aspect for a specific entity. The instances are connected with the entity by the unique identifier of the entity.</p>
+<h2 id="system">System</h2>
+<p>The system executes business logic on every entity using the needed components of the entity according to the executed command.</p>
 </article>
 </div>
 </div>
