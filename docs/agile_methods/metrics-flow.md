@@ -19,3 +19,7 @@ Little's law states that the following relationship holds:
 \operatorname{average cycle time} = \frac{\operatorname{average work in progress}}{\operatorname{average throughput}}
 \]
 
+## Further readings:
+
+* 4 Key Flow Metrics and how to use them in Scrum's events: <https://www.scrum.org/resources/blog/4-key-flow-metrics-and-how-use-them-scrums-events>
+
