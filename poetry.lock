@@ -168,11 +168,11 @@ i18n = ["babel (>=2.9.0)"]
 
 [[package]]
 name = "mkdocs-awesome-pages-plugin"
-version = "2.6.1"
+version = "2.7.0"
 description = "An MkDocs plugin that simplifies configuring page titles and their order"
 category = "main"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6.2"
 
 [package.dependencies]
 mkdocs = ">=1"
@@ -385,7 +385,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "414593b80d9e0f8e2781b39cebc2befbc77397190a305f8f70a75b991c1e6af6"
+content-hash = "43e949690fcb553bb27a4024c4210c5b4f878cbda6f2569a8294b07edfda0cdf"
 
 [metadata.files]
 beautifulsoup4 = [
@@ -499,8 +499,8 @@ mkdocs = [
     {file = "mkdocs-1.2.3.tar.gz", hash = "sha256:89f5a094764381cda656af4298727c9f53dc3e602983087e1fe96ea1df24f4c1"},
 ]
 mkdocs-awesome-pages-plugin = [
-    {file = "mkdocs-awesome-pages-plugin-2.6.1.tar.gz", hash = "sha256:8f2f803a3d4a2cd2e290644b1b8c54cf2ae942db9ce91021c2ba858a991a3a8a"},
-    {file = "mkdocs_awesome_pages_plugin-2.6.1-py3-none-any.whl", hash = "sha256:43994aedadca881088e5d6bb420140a73ce517ca3e070972715f93b086c9c497"},
+    {file = "mkdocs-awesome-pages-plugin-2.7.0.tar.gz", hash = "sha256:f0fb3cc8ccfd9ca904b8c6db0a0cbec24d0ff3f76540bfe063dc173b30f8d4a8"},
+    {file = "mkdocs_awesome_pages_plugin-2.7.0-py3-none-any.whl", hash = "sha256:875ae2b1a1a782a40ceb6fb8a5f2e83ffb15e6bdca29c597a4decb6bdd76e066"},
 ]
 mkdocs-material = [
     {file = "mkdocs-material-8.1.11.tar.gz", hash = "sha256:091bafac6978db7eec5660cd5142cee24efdb6a2d8235a2b2cc84d527cffb414"},
