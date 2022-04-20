@@ -204,7 +204,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "mkdocs-mermaid2-plugin"
-version = "0.5.2"
+version = "0.6.0"
 description = "A MkDocs plugin for including mermaid graphs in markdown sources"
 category = "main"
 optional = false
@@ -382,7 +382,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "8776a0f989ea514c6aefa59dabd1531f74235a4c112eebc795b7d0525ccd3420"
+content-hash = "d46b1e8bae4b23953d810390db3a62bfdf5c736e096a4f1962382988f647de0e"
 
 [metadata.files]
 beautifulsoup4 = [
@@ -508,8 +508,8 @@ mkdocs-material-extensions = [
     {file = "mkdocs_material_extensions-1.0.3-py3-none-any.whl", hash = "sha256:a82b70e533ce060b2a5d9eb2bc2e1be201cf61f901f93704b4acf6e3d5983a44"},
 ]
 mkdocs-mermaid2-plugin = [
-    {file = "mkdocs-mermaid2-plugin-0.5.2.tar.gz", hash = "sha256:d920cec8c9cea52fa144f82b94aa5e0398bd4391e44c314475ae61dae871a23b"},
-    {file = "mkdocs_mermaid2_plugin-0.5.2-py3-none-any.whl", hash = "sha256:7a8cc676643d45172fdd554ed578e575a4baf7c8f47b8ce5b27e98ee425ff48e"},
+    {file = "mkdocs-mermaid2-plugin-0.6.0.tar.gz", hash = "sha256:99cca6db7c6b4a954a701dcb6b507191bc32a7b0b47eacf2885c1bacf77d1af1"},
+    {file = "mkdocs_mermaid2_plugin-0.6.0-py3-none-any.whl", hash = "sha256:ffbe8a7daa7ed718cb800c44c5ce4c0ff413caebf7b8b63d9c4a998dfd78a64d"},
 ]
 mkdocs-section-index = [
     {file = "mkdocs-section-index-0.3.4.tar.gz", hash = "sha256:050151bfe7c0e374f197335e0ecb19c45b53dbafc0f817aa203f0cc24bcf7d10"},
