@@ -18,6 +18,17 @@ The work has to be inspected frequently to be able to adjust accordingly in the 
 
 In the occurrence of deviations or problems in the process and work the team has to adapt fast to minimize further problems. To adapt fast, a team has to be self-managing. 
 
+## Five values
+
+The member of the Scrum team should act accordingly to the five values empowering their team work.
+
+* Commitment
+* Focus
+* Openness
+* Respect
+* Courage
+
+
 ## Reference
 
 <https://scrumguides.org/download.html>
