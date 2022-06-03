@@ -38,6 +38,14 @@ Five events are practised in Scrum:
 * Sprint Review
 * Sprint Retrospective
 
+## Artifacts
+
+Three artifacts represent value or work in Scrum and each is commited to one goal:
+
+* Product Backlog -> Product Goal
+* Spring Backlog -> Sprint Goal
+* Increment -> Definition of Done 
+
 ## Reference
 
 <https://scrumguides.org/download.html>
