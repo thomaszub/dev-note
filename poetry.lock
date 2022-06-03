@@ -180,7 +180,7 @@ wcmatch = ">=7"
 
 [[package]]
 name = "mkdocs-material"
-version = "8.2.16"
+version = "8.3.0"
 description = "Documentation that simply works"
 category = "main"
 optional = false
@@ -382,7 +382,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d46b1e8bae4b23953d810390db3a62bfdf5c736e096a4f1962382988f647de0e"
+content-hash = "b8a1fca1dee5036785d3e04c7247025663feecb7346ec5daa78860ddb4c46a81"
 
 [metadata.files]
 beautifulsoup4 = [
@@ -500,8 +500,8 @@ mkdocs-awesome-pages-plugin = [
     {file = "mkdocs_awesome_pages_plugin-2.7.0-py3-none-any.whl", hash = "sha256:875ae2b1a1a782a40ceb6fb8a5f2e83ffb15e6bdca29c597a4decb6bdd76e066"},
 ]
 mkdocs-material = [
-    {file = "mkdocs-material-8.2.16.tar.gz", hash = "sha256:7e0a8d0adf0e3425e707e119b041820b5cd3a015225c9c6031ed086e74fe4275"},
-    {file = "mkdocs_material-8.2.16-py2.py3-none-any.whl", hash = "sha256:40557b12950d3212cb0d044f57fe47787f698daea540d01b2e3856237705fa34"},
+    {file = "mkdocs-material-8.3.0.tar.gz", hash = "sha256:4cad98c47c49a86591ed16a790c07d59402901fc5345f575a3b7329403f5c66e"},
+    {file = "mkdocs_material-8.3.0-py2.py3-none-any.whl", hash = "sha256:e37e7da1c5923c5b9f0bb8c4ad90bc694fee8f966b43b302a7ff61cb2c35c2e0"},
 ]
 mkdocs-material-extensions = [
     {file = "mkdocs-material-extensions-1.0.3.tar.gz", hash = "sha256:bfd24dfdef7b41c312ede42648f9eb83476ea168ec163b613f9abd12bbfddba2"},
