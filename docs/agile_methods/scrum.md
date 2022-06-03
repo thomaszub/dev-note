@@ -28,6 +28,15 @@ The member of the Scrum team should act accordingly to the five values empowerin
 * Respect
 * Courage
 
+## Events
+
+Five events are practised in Scrum:
+
+* Sprint
+* Sprint Planning
+* Daily Scrum
+* Sprint Review
+* Sprint Retrospective
 
 ## Reference
 
