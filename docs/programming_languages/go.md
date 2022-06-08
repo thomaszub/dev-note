@@ -1,6 +1,6 @@
 # Go
 
-This note ia about the Go language.
+This note is about the Go language.
 
 ## Design patterns
 
