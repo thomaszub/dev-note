@@ -1032,6 +1032,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#loading-env-in-shell" class="md-nav__link">
+    Loading .env in shell
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1073,6 +1080,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#loading-env-in-shell" class="md-nav__link">
+    Loading .env in shell
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1102,6 +1116,11 @@
 dotcfg config --local status.showUntrackedFiles no
 </code></pre></div>
 <p>Setting the upstream, adding files, etc. work as usual except the command <code>dotcfg</code> is used.</p>
+<h2 id="loading-env-in-shell">Loading .env in shell</h2>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="o">[</span> -f .env <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nb">export</span> <span class="k">$(</span><span class="nb">echo</span> <span class="k">$(</span>cat .env <span class="p">|</span> sed <span class="s1">&#39;s/#.*//g&#39;</span><span class="p">|</span> xargs<span class="k">)</span> <span class="p">|</span> envsubst<span class="k">)</span>
+<span class="k">fi</span>
+</code></pre></div>
 
               
             </article>
