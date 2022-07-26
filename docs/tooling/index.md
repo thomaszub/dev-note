@@ -18,3 +18,11 @@ dotcfg config --local status.showUntrackedFiles no
 ```
 
 Setting the upstream, adding files, etc. work as usual except the command `dotcfg` is used.
+
+## Loading .env in shell
+
+```sh
+if [ -f .env ]; then
+  export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst)
+fi
+```
