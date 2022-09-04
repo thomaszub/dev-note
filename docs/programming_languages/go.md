@@ -2,6 +2,10 @@
 
 This note is about the Go language.
 
+## General design
+
+„Align the happy path to the left; you should quickly be able to scan down one column to see the expected execution flow.“ - Mat Ryer
+
 ## Design patterns
 
 
