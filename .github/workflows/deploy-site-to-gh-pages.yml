@@ -20,9 +20,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
       - name: Setup Poetry
-        uses: abatilo/actions-poetry@v2.1.0
+        uses: abatilo/actions-poetry@v2.1.6
         with:
-          poetry-version: 1.1.4
+          poetry-version: 1.2.0
       - name: Create requirements.txt
         run: poetry export -f requirements.txt --output requirements.txt
       - name: Install dependencies
