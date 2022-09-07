@@ -34,6 +34,23 @@ func GetInstance() Singleton {
   })
   return *instance
 }
+```
 
+### Option
+
+```Go
+
+type options struct {
+  myValue int
+}
+
+type Option func(options *options) err
+
+func WithValue(value int) Option {
+  return func(options *options) err {
+    options.myValue = value
+    return nil
+  }
+}
 
 ```
